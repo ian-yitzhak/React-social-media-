@@ -1,4 +1,4 @@
-import React from 'react'
+import './topbar.css'
 import {Search ,Person, Chat,Notifications } from '@material-ui/icons'
 function Topbar() {
   return (
@@ -8,7 +8,7 @@ function Topbar() {
     <div className = "topbarLeft"> <span className="logo"> IAN </span> </div>
 
       <div className = "topbarCenter"> 
-      <div className = "search"> <Search /> 
+      <div className = "searchBar"> <Search /> 
       <input placeholder="search for post" className="search" />
 
       </div>
@@ -38,14 +38,13 @@ function Topbar() {
        <Notifications />
        <span className="topbarIconBadge"> 1 </span> 
        </div>
+       </div>
+
+       <img src="/assets/person/9.jpg" alt="" className="topbarImg" />
 
 
 
        </div>
-
-
-       </div>
-
     </div>
   );
 }
